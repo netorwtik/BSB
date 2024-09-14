@@ -114,6 +114,13 @@ header {
   bottom: 0px;
 }
 
+.logo-menu-small {
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
 .header-menu-btn {
   display: flex;
   justify-content: space-between;
@@ -292,6 +299,37 @@ header {
   line-height: 12.94px;
   letter-spacing: 0.05em;
   text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-menu {
+    display: none;
+  }
+
+  .logo-menu-small {
+    display: block;
+    position: absolute;
+    right: -870px;
+    bottom: 0px;
+  }
+
+  .header-container {
+    min-width: 540px;
+    margin: 0 auto;
+  }
+
+  .menu-search {
+    display: none;
+  }
+
+  .header-menu-btn {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .menu-grid {
+    display: block;
+  }
 }
 
 /* other-section */
